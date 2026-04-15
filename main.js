@@ -29,7 +29,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll(
-    '.value-card, .industry-preview-card, .service-detail, .process-step, .result-card, ' +
+    '.value-card, .ind-box, .service-detail, .process-step, .result-card, ' +
     '.industry-card, .testimonial, .about-card, .metric-card, .outcome-card, .explainer-card, ' +
     '.principle, .approach-card, .tech-detail-card, .cost-card, .industry-deep-card, .info-card'
 ).forEach(el => {

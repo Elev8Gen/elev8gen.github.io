@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Elev8Gen</title>
+    <meta name="description" content="Get a free lead estimate for your market. Tell us your ideal customer and we'll show you exactly what's possible.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Elev<span class="accent">8</span>Gen</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="process.html">Process</a>
+            <a href="results.html">Results</a>
+            <a href="contact.html" class="nav-cta active">Get Started</a>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<section class="page-header">
+    <div class="container">
+        <span class="section-tag">Get Started</span>
+        <h1>Let's <span class="gradient-text">Elevate</span> Your Pipeline</h1>
+        <p class="page-header-sub">Tell us about your ideal customer. We'll respond within 24 hours with a free market assessment and lead estimate.</p>
+    </div>
+</section>
+
+<section class="content-section">
+    <div class="container">
+        <div class="contact-layout">
+            <div class="contact-form-section">
+                <h2>Start Your Free Consultation</h2>
+                <p>Fill out the form below and we'll get back to you with a detailed assessment of your market, an estimate of available leads matching your ICP, and a recommended engagement plan.</p>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Work Email *</label>
+                            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" placeholder="Your company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="industry">Your Industry *</label>
+                            <select id="industry" name="industry" required>
+                                <option value="" disabled selected>Select your industry</option>
+                                <option value="Life Insurance">Life Insurance</option>
+                                <option value="Health Insurance">Health Insurance</option>
+                                <option value="Medicare">Medicare</option>
+                                <option value="B2B SaaS">B2B SaaS</option>
+                                <option value="Recruiting & Staffing">Recruiting & Staffing</option>
+                                <option value="Real Estate">Real Estate</option>
+                                <option value="Financial Services">Financial Services</option>
+                                <option value="Solar & Home Services">Solar & Home Services</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="volume">Estimated Leads Needed Per Month</label>
+                            <select id="volume" name="volume">
+                                <option value="" disabled selected>Select volume</option>
+                                <option value="Under 200">Under 200</option>
+                                <option value="200-500">200 - 500</option>
+                                <option value="500-1000">500 - 1,000</option>
+                                <option value="1000-2000">1,000 - 2,000</option>
+                                <option value="2000+">2,000+</option>
+                                <option value="Not sure yet">Not sure yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">When Do You Need Leads?</label>
+                            <select id="timeline" name="timeline">
+                                <option value="" disabled selected>Select timeline</option>
+                                <option value="Immediately">Immediately</option>
+                                <option value="Within 2 weeks">Within 2 weeks</option>
+                                <option value="Within a month">Within a month</option>
+                                <option value="Just exploring">Just exploring options</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="icp">Describe Your Ideal Customer *</label>
+                        <textarea id="icp" name="icp" rows="5" placeholder="Who are you trying to reach? Include details like job titles, industries, company size, geographic focus, and any specific characteristics that define your best customers." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="current">Current Lead Source (Optional)</label>
+                        <textarea id="current" name="current_source" rows="3" placeholder="Where are you currently getting leads? What's working and what isn't? This helps us understand how to improve on what you have."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Submit — Get Your Free Assessment</button>
+                    <p class="form-note">We respond within 24 hours. No spam, no automated follow-ups. A real person will review your submission and reach out with a tailored recommendation.</p>
+                </form>
+            </div>
+            <div class="contact-info-section">
+                <div class="info-card">
+                    <h3>What Happens Next</h3>
+                    <div class="next-steps">
+                        <div class="next-step">
+                            <div class="next-step-num">1</div>
+                            <div>
+                                <strong>We Review Your ICP</strong>
+                                <p>Within 24 hours, we analyze your ideal customer profile and assess the available market in our data infrastructure.</p>
+                            </div>
+                        </div>
+                        <div class="next-step">
+                            <div class="next-step-num">2</div>
+                            <div>
+                                <strong>Market Assessment Call</strong>
+                                <p>A brief call where we share our findings: how many prospects match your ICP, recommended targeting strategy, and realistic delivery estimates.</p>
+                            </div>
+                        </div>
+                        <div class="next-step">
+                            <div class="next-step-num">3</div>
+                            <div>
+                                <strong>Free Sample Batch</strong>
+                                <p>If the fit looks right, we run a small batch of leads through our full pipeline so you can evaluate the quality before committing.</p>
+                            </div>
+                        </div>
+                        <div class="next-step">
+                            <div class="next-step-num">4</div>
+                            <div>
+                                <strong>Start Generating</strong>
+                                <p>Once you're satisfied with the sample, we launch your campaign and begin recurring delivery on the schedule that fits your team.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h4>Is there a minimum commitment?</h4>
+                            <p>No long-term contracts required. We offer month-to-month engagements because we believe in earning your business through consistent quality, not locking you in.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>How quickly can I receive my first leads?</h4>
+                            <p>Most campaigns deliver the first batch within 48 hours of finalizing the ICP. Complex or highly specialized targeting may take slightly longer.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What format do leads come in?</h4>
+                            <p>CSV by default. We also integrate directly with Salesforce, HubSpot, Pipedrive, and most major CRMs. Custom formats and API delivery are available for enterprise clients.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What if a lead has incorrect data?</h4>
+                            <p>We stand behind our verification process. If you receive leads with data that doesn't meet our quality standards, let us know and we'll investigate and make it right. Our goal is a long-term partnership, not a one-time transaction.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do you work with companies outside the US?</h4>
+                            <p>Yes. While our verification infrastructure is strongest for US contacts, we serve clients globally and can build lead pipelines targeting prospects in North America, Europe, and other major markets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Elev<span class="accent">8</span>Gen</a>
+                <p>AI-powered lead generation that delivers the most accurate contacts for businesses that grow through outbound conversations.</p>
+            </div>
+            <div class="footer-links"><h4>Company</h4><a href="about.html">About Us</a><a href="services.html">Services</a><a href="process.html">Our Process</a><a href="results.html">Results</a></div>
+            <div class="footer-links"><h4>Industries</h4><a href="services.html">Insurance</a><a href="services.html">B2B SaaS</a><a href="services.html">Recruiting</a><a href="services.html">Real Estate</a></div>
+            <div class="footer-links"><h4>Get Started</h4><a href="contact.html">Free Consultation</a><a href="contact.html">Request a Sample</a><a href="contact.html">Contact Us</a></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Elev8Gen. All rights reserved.</p></div>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

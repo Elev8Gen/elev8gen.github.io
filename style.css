@@ -1575,4 +1575,41 @@ h3 { font-size: 1.2rem; font-weight: 600; line-height: 1.3; }
     .home-cta-actions { flex-direction: column; align-items: center; }
     .service-detail-header { flex-direction: column; align-items: flex-start; }
     .service-popular { margin-left: 0; }
+
+    /* Contact page mobile fixes */
+    .contact-layout { grid-template-columns: 1fr; gap: 32px; }
+    .contact-form-section { order: 1; }
+    .contact-info-section { order: 2; }
+    .form-row { grid-template-columns: 1fr; gap: 16px; }
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        padding: 16px;
+        font-size: 16px; /* prevents iOS zoom on focus */
+    }
+    .contact-form { gap: 20px; }
+    .form-group label { font-size: 14px; }
+    .info-card { padding: 24px; }
+    .next-step { gap: 12px; }
+    .faq-item h4 { font-size: 0.95rem; }
+    .faq-item p { font-size: 0.85rem; }
+    .btn-full { padding: 18px; font-size: 16px; }
+    .page-header { padding: 120px 0 60px; }
+    .page-header-sub { font-size: 1rem; padding: 0 8px; }
+    .content-section { padding: 60px 0; }
+
+    /* Industry grid — 2 columns on mobile instead of overflow */
+    .ind-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .ind-box { padding: 20px; }
+    .ind-box h3 { font-size: 0.9rem; }
+    .ind-box p { font-size: 0.8rem; }
+}
+
+@media (max-width: 420px) {
+    .ind-grid { grid-template-columns: 1fr; }
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        padding: 14px 12px;
+    }
 }
